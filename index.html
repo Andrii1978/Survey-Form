@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Help us find out which books people are interested in by completing a survey.</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name: <input id="name" name="name" type="text"
+                    placeholder="Enter your name" required /></label>
+            <label for="number" id="number-label">Enter your age: <input id="number" type="number" min="13" max="120"
+                    placeholder="Age" required /></lable>
+                <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your email"
+                        required /></label>
+        </fieldset>
+        <fieldset>
+            <label>What form of books do you prefer:
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">traditional</option>
+                    <option value="2">electronik</option>
+                </select>
+            </label>
+            <h2>Whether you buy children’s books?</h2>
+            <label for="no"><input value="no" id="no" type="radio" name="form-book" class="inline" />No</label>
+            <label for="traditional-book"><input value="traditional-book" id="traditional-book" type="radio"
+                    name="form-book" class="inline" />Yes, traditional book</label>
+            <label for="electronik-book"><input value="electronik-book" id="electronik-book" type="radio"
+                    name="form-book" class="inline" />Yes, electronik book</label>
+        </fieldset>
+        <fieldset>
+            <h2>What genres do you like?</h2>
+            <label for="adventure"><input value="adventure" id="adventure" type="checkbox" name="genres"
+                    class="inline" /> Adventure</label>
+            <label for="detectives"><input value="detectives" id="detectives" type="checkbox" name="genres"
+                    class="inline" /> Detectives and threillers</label>
+            <label for="drama"><input value="drama" id="drama" type="checkbox" name="genres" class="inline" />
+                Drama</label>
+            <label for="fantasy"><input value="fantasy" id="fantasy" type="checkbox" name="genres" class="inline" />
+                Fantasy</label>
+            <label for="folklore"><input value="folklore" id="folklore" type="checkbox" name="genres" class="inline" />
+                Folklore</label>
+            <label for="humor"><input value="humor" id="humor" type="checkbox" name="genres" class="inline" />
+                Humor</label>
+            <label for="poetry"><input value="poetry" id="poetry" type="checkbox" name="genres" class="inline" />
+                Poetry</label>
+            <label for="romance novels"><input value="romance novels" id="romance novels" type="checkbox" name="genres"
+                    class="inline" /> Romance novels</label>
+        </fieldset>
+        <fieldset>
+            <label>Here you can leave comments and suggestions:
+                <textarea id="comments and suggestions" rows="3" cols="30"
+                    placeholder="For comments and suggestions..."></textarea>
+            </label>
+            </feildset>
+            <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
